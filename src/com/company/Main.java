@@ -21,8 +21,7 @@ public class Main {
     }
 
     public static String ask(Scanner input) {
-        String option = input.nextLine();
-        return option;
+        return input.nextLine();
     }
 
     public static void add(Scanner input, BirdDatabase birdModel) {
