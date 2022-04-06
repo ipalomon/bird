@@ -1,7 +1,6 @@
 package com.company;
 import java.util.Scanner;
 public class Main {
-
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -10,24 +9,13 @@ public class Main {
         while (option) {
             System.out.println("0 Quit\n 1 Add\n 2 Observation\n 3 Show\n 4 Statistics\n");
             String command = ask(scanner);
-            switch (command){
-                case  "0" :
-                    option = false;
-                    break;
-                case "1" :
-                    add(scanner,birdModel);
-                    break;
-                case "2" :
-                    observation(scanner,birdModel);
-                    break;
-                case "3":
-                    show(scanner,birdModel);
-                    break;
-                case "4" :
-                    statistics(scanner,birdModel);
-                    break;
-                default:
-                    System.out.println("Unknown Option!");
+            switch (command) {
+                case "0" -> option = false;
+                case "1" -> add(scanner, birdModel);
+                case "2" -> observation(scanner, birdModel);
+                case "3" -> show(scanner, birdModel);
+                case "4" -> statistics(scanner, birdModel);
+                default -> System.out.println("Unknown Option!");
             }
         }
     }
